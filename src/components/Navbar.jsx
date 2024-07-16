@@ -10,6 +10,7 @@ import {
 	useScroll,
 	motion,
 } from "framer-motion"
+import gjlogo from "/src/assets/backgrounds/gj-logo-2.png"
 
 export const Navbar = () => {
 	const [menuIcon, setMenuIcon] = useState(false)
@@ -151,7 +152,7 @@ export const Navbar = () => {
 							windowScrollToTop()
 						}}
 					>
-						<img src="assets/backgrounds/gj-logo-2.png" alt="GJ-LOGO" />
+						<img src={gjlogo} alt="GJ-LOGO" />
 					</Link>
 				</div>
 				<div

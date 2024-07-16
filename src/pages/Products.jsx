@@ -3,6 +3,26 @@ import "./products.css"
 import { Link } from "react-router-dom"
 import { motion, stagger, useAnimate, useInView } from "framer-motion"
 import { useTypewriter } from "react-simple-typewriter"
+import airconsproducts from "/src/assets/products/airconsproducts.png"
+import wallmounted from "/src/assets/products/wallmounted.png"
+import windowtype from "/src/assets/products/window.png"
+import cassette from "/src/assets/products/cassette.png"
+import ceilingmounted from "/src/assets/products/ceilingmounted.png"
+import concealed from "/src/assets/products/concealed.png"
+import floormounted from "/src/assets/products/floormounted.png"
+import freematch from "/src/assets/products/freematch.png"
+import chilledwater from "/src/assets/products/chilledwater.png"
+import bigduct from "/src/assets/products/bigduct.png"
+import vrfsystem from "/src/assets/products/vrfsystem.png"
+import gree from "/src/assets/brands/gree.png"
+import daikin from "/src/assets/brands/daikin.png"
+import panasonic from "/src/assets/brands/panasonic.png"
+import koppel from "/src/assets/brands/koppel.png"
+import samsung from "/src/assets/brands/samsung.png"
+import carrier from "/src/assets/brands/carrier.png"
+import lg from "/src/assets/brands/lg.png"
+import haier from "/src/assets/brands/haier.png"
+import midea from "/src/assets/brands/midea.png"
 
 export const Products = () => {
 	const refRibbon = useRef(null)
@@ -169,7 +189,7 @@ export const Products = () => {
 					</div>
 				</div>
 				<img
-					src="assets/products/airconsproducts.webp"
+					src={airconsproducts}
 					alt="Image"
 					ref={refP}
 					style={{
@@ -207,11 +227,11 @@ export const Products = () => {
 						ref={scopeImgResidentialProducts}
 					>
 						<Link to="/contact">
-							<img src="assets/products/wallmounted.webp" alt="Image" />
+							<img src={wallmounted} alt="Image" />
 							<h3>WALL MOUNTED TYPE</h3>
 						</Link>
 						<Link to="/contact">
-							<img src="assets/products/window.webp" alt="Image" />
+							<img src={windowtype} alt="Image" />
 							<h3>WINDOW TYPE</h3>
 						</Link>
 					</div>
@@ -234,23 +254,23 @@ export const Products = () => {
 						ref={scopeImgCommercialProducts}
 					>
 						<Link to="/contact">
-							<img src="assets/products/cassette.webp" alt="Image" />
+							<img src={cassette} alt="Image" />
 							<h3>CASSETTE TYPE</h3>
 						</Link>
 						<Link>
-							<img src="assets/products/ceilingmounted.webp" alt="Image" />
+							<img src={ceilingmounted} alt="Image" />
 							<h3>CEILING MOUNTED TYPE</h3>
 						</Link>
 						<Link to="/contact">
-							<img src="assets/products/floormounted.webp" alt="Image" />
+							<img src={floormounted} alt="Image" />
 							<h3>FLOOR MOUNTED TYPE</h3>
 						</Link>
 						<Link to="/contact">
-							<img src="assets/products/freematch.webp" alt="Image" />
+							<img src={freematch} alt="Image" />
 							<h3>FREE MATCH TYPE</h3>
 						</Link>
 						<Link to="/contact">
-							<img src="assets/products/concealed.webp" alt="Image" />
+							<img src={concealed} alt="Image" />
 							<h3>CONCEALED TYPE</h3>
 						</Link>
 					</div>
@@ -272,15 +292,15 @@ export const Products = () => {
 							ref={scopeImgIndustrialProducts}
 						>
 							<Link to="/contact">
-								<img src="assets/products/chilledwater.webp" alt="Image" />
+								<img src={chilledwater} alt="Image" />
 								<h3>CHILLED WATER TYPE</h3>
 							</Link>
 							<Link to="/contact">
-								<img src="assets/products/bigduct.webp" alt="Image" />
+								<img src={bigduct} alt="Image" />
 								<h3>BIG DUCT TYPE</h3>
 							</Link>
 							<Link to="/contact">
-								<img src="assets/products/vrfsystem.webp" alt="Image" />
+								<img src={vrfsystem} alt="Image" />
 								<h3>VRF SYSTEM</h3>
 							</Link>
 						</div>
@@ -302,43 +322,43 @@ export const Products = () => {
 				</h1>
 				<div ref={scopeImg}>
 					<Link to="https://greephilippines.com.ph/" target="_blank">
-						<img src="assets/brands/gree.png" alt="Image" />
+						<img src={gree} alt="Image" />
 					</Link>
 					<Link to="https://www.daikin.com.ph/products/" target="_blank">
-						<img src="assets/brands/daikin.png" alt="Image" />
+						<img src={daikin} alt="Image" />
 					</Link>
 					<Link
 						to="https://www.panasonic.com/ph/air-solutions/air-conditioning.html"
 						target="_blank"
 					>
-						<img src="assets/brands/panasonic.png" alt="Image" />
+						<img src={panasonic} alt="Image" />
 					</Link>
 					<Link to="https://koppel.ph/products/" target="_blank">
-						<img src="assets/brands/koppel.png" alt="Image" />
+						<img src={koppel} alt="Image" />
 					</Link>
 					<Link
 						to="https://www.samsung.com/ph/air-conditioners/all-air-conditioners/"
 						target="_blank"
 					>
-						<img src="assets/brands/samsung.png" alt="Image" />
+						<img src={samsung} alt="Image" />
 					</Link>
 					<Link
-						to="https://carrier.com.ph/residential/products/"
+						to="https://carrier.com.ph/residential/products/air-conditioners/all-products/"
 						target="_blank"
 					>
-						<img src="assets/brands/carrier.png" alt="Image" />
+						<img src={carrier} alt="Image" />
 					</Link>
 					<Link to="https://www.lg.com/ph/air-conditioners" target="_blank">
-						<img src="assets/brands/lg.png" alt="Image" />
+						<img src={lg} alt="Image" />
 					</Link>
 					<Link
 						to="https://www.haier.com/ph/air-conditioners/?spm=ph.ProductList_pc.header_101377_20190530.4"
 						target="_blank"
 					>
-						<img src="assets/brands/haier.png" alt="Image" />
+						<img src={haier} alt="Image" />
 					</Link>
-					<Link to="https://www.midea.com/ph/cooling-comfort" target="_blank">
-						<img src="assets/brands/midea.png" alt="Image" />
+					<Link to="https://www.midea.com/ph/shop" target="_blank">
+						<img src={midea} alt="Image" />
 					</Link>
 				</div>
 			</div>

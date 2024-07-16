@@ -5,7 +5,6 @@
 	flex-direction: column;
 }
 .aboutusHeader {
-	background-image: url("assets/backgrounds/aboutus.jpg");
 	background-color: #cccccc;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -48,7 +47,6 @@
 	color: rgb(0, 31, 143);
 }
 .missionContainer div:nth-of-type(2) {
-	background-image: url("assets/backgrounds/aircond-guide.jpg");
 	background-color: #cccccc;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -61,7 +59,6 @@
 	grid-template-columns: repeat(auto-fit, minmax(395px, 1fr));
 }
 .visionContainer div:nth-of-type(1) {
-	background-image: url("assets/backgrounds/vision.png");
 	background-color: #cccccc;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -101,7 +98,6 @@
 	position: absolute;
 }
 .lookingForContainer {
-	background-image: url("assets/backgrounds/lookingforexpert.jpg");
 	background-color: #cccccc;
 	background-position: center center;
 	background-repeat: no-repeat;

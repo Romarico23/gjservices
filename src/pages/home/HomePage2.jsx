@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react"
 import { motion, useAnimation, useInView } from "framer-motion"
 import { useNavigate } from "react-router-dom"
 import { useTypewriter } from "react-simple-typewriter"
+import image4 from "/src/assets/backgrounds/image-4.png"
 
 export const HomePage2 = ({ addMinusPage }) => {
 	const navigate = useNavigate()
@@ -118,7 +119,7 @@ export const HomePage2 = ({ addMinusPage }) => {
 						opacity: isInView ? 1 : 0,
 						transition: "all 3s",
 					}}
-					src="assets/backgrounds/image-4.png"
+					src={image4}
 					alt="Image"
 				/>
 			</div>

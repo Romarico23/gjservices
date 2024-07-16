@@ -7,6 +7,15 @@ import {
 	useAnimation,
 	useInView,
 } from "framer-motion"
+import gree from "/src/assets/brands/gree.png"
+import daikin from "/src/assets/brands/daikin.png"
+import panasonic from "/src/assets/brands/panasonic.png"
+import koppel from "/src/assets/brands/koppel.png"
+import samsung from "/src/assets/brands/samsung.png"
+import carrier from "/src/assets/brands/carrier.png"
+import lg from "/src/assets/brands/lg.png"
+import haier from "/src/assets/brands/haier.png"
+import midea from "/src/assets/brands/midea.png"
 
 export const HomePage3 = ({ addMinusPage }) => {
 	const navigate = useNavigate()
@@ -60,40 +69,43 @@ export const HomePage3 = ({ addMinusPage }) => {
 			</h1>
 			<div ref={scopeImg}>
 				<Link to="https://greephilippines.com.ph/" target="_blank">
-					<img src="assets/brands/gree.png" alt="Image" />
+					<img src={gree} alt="Image" />
 				</Link>
 				<Link to="https://www.daikin.com.ph/products/" target="_blank">
-					<img src="assets/brands/daikin.png" alt="Image" />
+					<img src={daikin} alt="Image" />
 				</Link>
 				<Link
 					to="https://www.panasonic.com/ph/air-solutions/air-conditioning.html"
 					target="_blank"
 				>
-					<img src="assets/brands/panasonic.png" alt="Image" />
+					<img src={panasonic} alt="Image" />
 				</Link>
 				<Link to="https://koppel.ph/products/" target="_blank">
-					<img src="assets/brands/koppel.png" alt="Image" />
+					<img src={koppel} alt="Image" />
 				</Link>
 				<Link
 					to="https://www.samsung.com/ph/air-conditioners/all-air-conditioners/"
 					target="_blank"
 				>
-					<img src="assets/brands/samsung.png" alt="Image" />
+					<img src={samsung} alt="Image" />
 				</Link>
-				<Link to="https://carrier.com.ph/residential/products/" target="_blank">
-					<img src="assets/brands/carrier.png" alt="Image" />
+				<Link
+					to="https://carrier.com.ph/residential/products/air-conditioners/all-products/"
+					target="_blank"
+				>
+					<img src={carrier} alt="Image" />
 				</Link>
 				<Link to="https://www.lg.com/ph/air-conditioners" target="_blank">
-					<img src="assets/brands/lg.png" alt="Image" />
+					<img src={lg} alt="Image" />
 				</Link>
 				<Link
 					to="https://www.haier.com/ph/air-conditioners/?spm=ph.ProductList_pc.header_101377_20190530.4"
 					target="_blank"
 				>
-					<img src="assets/brands/haier.png" alt="Image" />
+					<img src={haier} alt="Image" />
 				</Link>
-				<Link to="https://www.midea.com/ph/cooling-comfort" target="_blank">
-					<img src="assets/brands/midea.png" alt="Image" />
+				<Link to="https://www.midea.com/ph/shop" target="_blank">
+					<img src={midea} alt="Image" />
 				</Link>
 			</div>
 			<div

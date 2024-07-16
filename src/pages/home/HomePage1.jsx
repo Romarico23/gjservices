@@ -4,10 +4,12 @@ import {
 	useAnimate,
 	useAnimation,
 	useInView,
-	usePresence,
 } from "framer-motion"
 import React, { useEffect, useRef } from "react"
 import { useNavigate } from "react-router-dom"
+import image1 from "/src/assets/backgrounds/image-1.png"
+import image2 from "/src/assets/backgrounds/image-2.png"
+import image3 from "/src/assets/backgrounds/image-3.png"
 
 export const HomePage1 = ({ addMinusPage }) => {
 	const navigate = useNavigate()
@@ -85,8 +87,8 @@ export const HomePage1 = ({ addMinusPage }) => {
 				<button onClick={handleNavigateContact}>INQUIRE NOW</button>
 			</div>
 			<div ref={scopeImg}>
-				<img src="assets/backgrounds/image-1.png" alt="Image" />
-				<img src="assets/backgrounds/image-2.png" alt="Image" />
+				<img src={image1} alt="Image" />
+				<img src={image2} alt="Image" />
 			</div>
 			<div>
 				<img
@@ -96,7 +98,7 @@ export const HomePage1 = ({ addMinusPage }) => {
 						opacity: isInViewBackgroundImg ? 0.5 : 0,
 						transition: "all 3s",
 					}}
-					src="assets/backgrounds/image-3.png"
+					src={image3}
 					alt="Image"
 				/>
 			</div>

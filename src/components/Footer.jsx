@@ -7,6 +7,7 @@ import { ImPhoneHangUp } from "react-icons/im"
 import { MdPhonelinkRing } from "react-icons/md"
 import { BiWorld } from "react-icons/bi"
 import emailjs from "@emailjs/browser"
+import gjlogo from "/src/assets/backgrounds/gj-logo-2.png"
 
 export const Footer = () => {
 	const [email, setEmail] = useState("")
@@ -46,7 +47,7 @@ export const Footer = () => {
 			<div className="footerDetails">
 				<div className="footerDetailsContainer">
 					<Link to="/" onClick={windowScrollToTop}>
-						<img src="assets/backgrounds/gj-logo-2.png" alt="GJ-LOGO" />
+						<img src={gjlogo} alt="GJ-LOGO" />
 					</Link>
 					<h3>CONTACT US</h3>
 					<span>
@@ -92,7 +93,7 @@ export const Footer = () => {
 			</div>
 			<div className="footerCopyright">
 				<p>
-					Copyright © 2023 by GJ Aircon & Refrigeration Services | All Rights
+					Copyright © 2024 by GJ Aircon & Refrigeration Services | All Rights
 					Reserved
 				</p>
 			</div>
