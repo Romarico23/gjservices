@@ -11,6 +11,10 @@ import { Link, useNavigate } from "react-router-dom"
 import { stagger, useAnimate, useInView, motion } from "framer-motion"
 import acinstallation from "/src/assets/services/acinstallation.png"
 import accleaning from "/src/assets/services/accleaning.png"
+import acrepair from "/src/assets/services/acrepair.png"
+import acdismantle from "/src/assets/services/acdismantle.png"
+import pcbrepair from "/src/assets/services/pcbrepair.png"
+import accheckup from "/src/assets/services/accheckup.png"
 
 export const Home = () => {
 	const [currentPage, setCurrentPage] = useState(1)
@@ -194,36 +198,32 @@ export const Home = () => {
 				</p>
 				<div ref={scopeServicesList}>
 					<Link to="/contact">
-						{/* <img src="./src/assets/services/acinstallation.png" alt="Image" /> */}
 						<img src={acinstallation} alt="Image" />
 						<h3>AC Installation</h3>
 						<p>Request Now</p>
 					</Link>
 					<Link to="/contact">
-						{/* <img src="assets/services/accleaning.png" alt="Image" /> */}
 						<img src={accleaning} alt="Image" />
 						<h3>AC Cleaning</h3>
 						<p>Request Now</p>
 					</Link>
 					<Link to="/contact">
-						{/* <img src="assets/services/acrepair.png" alt="Image" /> */}
-						<img src="./src/assets/services/acrepair.png" alt="Image" />
-
+						<img src={acrepair} alt="Image" />
 						<h3>AC Repair</h3>
 						<p>Request Now</p>
 					</Link>
 					<Link to="/contact">
-						<img src="assets/services/acdismantle.png" alt="Image" />
+						<img src={acdismantle} alt="Image" />
 						<h3>AC Dismantle</h3>
 						<p>Request Now</p>
 					</Link>
 					<Link to="/contact">
-						<img src="assets/services/pcbrepair.png" alt="Image" />
+						<img src={pcbrepair} alt="Image" />
 						<h3>PCB Repair</h3>
 						<p>Request Now</p>
 					</Link>
 					<Link to="/contact">
-						<img src="assets/services/accheckup.png" alt="Image" />
+						<img src={accheckup} alt="Image" />
 						<h3>AC Check Up</h3>
 						<p>Request Now</p>
 					</Link>
