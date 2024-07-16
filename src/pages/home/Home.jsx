@@ -15,6 +15,7 @@ import acrepair from "/src/assets/services/acrepair.png"
 import acdismantle from "/src/assets/services/acdismantle.png"
 import pcbrepair from "/src/assets/services/pcbrepair.png"
 import accheckup from "/src/assets/services/accheckup.png"
+import buildingbackground from "/src/assets/backgrounds/buildingbackground.jpg"
 
 export const Home = () => {
 	const [currentPage, setCurrentPage] = useState(1)
@@ -127,6 +128,7 @@ export const Home = () => {
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.1, ease: "easeInOut" }}
 			exit={{ opacity: 0 }}
+			style={{ backgroundImage: `url(${buildingbackground})` }}
 		>
 			{currentPage === 1 && <HomePage1 addMinusPage={addMinusPage} />}
 			{currentPage === 2 && <HomePage2 addMinusPage={addMinusPage} />}

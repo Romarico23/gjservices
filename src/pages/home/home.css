@@ -1,6 +1,9 @@
+/* @import url("./src/assets/backgrounds/buildingbackground.jpg"); */
+/* @import buildingbackground from "/src/assets/backgrounds/buildingbackground.jpg"; */
+
 .homeContent {
-	/* background-image: url("./src/assets/backgrounds/buildingbackground.jpg"); */
-	background-image: url("./assets/backgrounds/buildingbackground.jpg");
+	/* background-image: url('./src/assets/backgrounds/buildingbackground.jpg'); */
+	/* background-image: url("/assets/backgrounds/buildingbackground.jpg"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
