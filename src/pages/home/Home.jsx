@@ -9,8 +9,8 @@ import { HomePage2 } from "./HomePage2"
 import { HomePage3 } from "./HomePage3"
 import { Link, useNavigate } from "react-router-dom"
 import { stagger, useAnimate, useInView, motion } from "framer-motion"
-import acinstallation from "/src/assets/services/acinstallation.png"
-import accleaning from "/src/assets/services/accleaning.png"
+// import acinstallation from "/src/assets/services/acinstallation.png"
+// import accleaning from "/src/assets/services/accleaning.png"
 
 export const Home = () => {
 	const [currentPage, setCurrentPage] = useState(1)
@@ -195,13 +195,13 @@ export const Home = () => {
 				<div ref={scopeServicesList}>
 					<Link to="/contact">
 						{/* <img src="./src/assets/services/acinstallation.png" alt="Image" /> */}
-						<img src={acinstallation} alt="Image" />
+						{/* <img src={acinstallation} alt="Image" /> */}
 						<h3>AC Installation</h3>
 						<p>Request Now</p>
 					</Link>
 					<Link to="/contact">
 						{/* <img src="assets/services/accleaning.png" alt="Image" /> */}
-						<img src={accleaning} alt="Image" />
+						{/* <img src={accleaning} alt="Image" /> */}
 						<h3>AC Cleaning</h3>
 						<p>Request Now</p>
 					</Link>
