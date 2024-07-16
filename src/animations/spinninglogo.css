@@ -1,0 +1,24 @@
+.spinningLogo {
+  display: flex;
+  justify-content: center;
+}
+.spinningLogo div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  margin: -50px 0 0 0;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
